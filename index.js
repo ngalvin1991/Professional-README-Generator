@@ -23,7 +23,7 @@ inquirer.prompt([
     {
         type: "input",
         message: "How is the app used?",
-        name: "useage",
+        name: "usage",
     },
     {
         type: "list",

@@ -32,10 +32,56 @@ function generateLicenseBadges(license) {
   return badge[license];
 }
 
-// function generateMarkdown(response, badgeMarkdown) {
-// return `# Project Title: ${response.title}
+function generateMarkdown(response, badgeMarkdown) {
+return `# Project Title: ${response.project}
 
-// ${badgeMarkdown}
+${badgeMarkdown}
 
-// }
-module.exports = generateMarkdown;
+## Project Description 
+
+${response.description}
+
+## Table of Contents: 
+[Installation](#installation)
+[Useage](#usage)
+[Licensing](#license)
+[Tests](#testing)
+[Contact](#contact)
+
+## Installation 
+  To install the app run the following: 
+
+  ${response.installation}
+
+## Usage 
+
+  Please use the following command to run the application: 
+
+  ${response.usage}
+
+## License 
+
+  This application uses the following license: 
+
+  ${response.license}
+  ${badgeMarkdown}
+
+  ## Contributions
+
+  If you wish to contribute to this application, please fork and create a pull request using the appropriate link.
+
+  ## Questions 
+
+  Should you have any questions regarding the application, repo or wish to contact me directly, please email me: 
+    ${response.email}. 
+
+  If you wish to follow me on Github and LinkedIn, please use the links below: 
+  ${response.github},
+  ${response.linkedin},
+  `;
+}
+
+module.exports = {
+  generateMarkdown,
+  generateLicenseBadges,
+};
