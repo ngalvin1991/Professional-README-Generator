@@ -4,10 +4,10 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-inquirer .prompt([
+inquirer.prompt([
     {
-        type:"input",
-        message:"Please input the title of your project:",
+        type: "input",
+        message: "Please input the title of your project:",
         name: "project",
     },
     {
@@ -54,31 +54,32 @@ inquirer .prompt([
         name: "linkedin"
     },
     {
-        type: "list", 
+        type: "list",
         message: "What license is required for this project?",
         name: "license",
         choices: [
-            "GNU General Public License v3.0",
-            "MIT License",
-            "BSD 2-Clause 'Simplified' License",
-            "BSD 3-Clause 'New' or 'Revised License",
-            "Boost Software License 1.0",
-            "Creative Commons Zero v1.0 Universal",
-            "Eclipse Public License 2.0",
-            "GNU Affero General Public License v3.0",
-            "GNU General Public License v2.0",
-            "GNU Lesser General Public License v2.1",
+            "The MIT License",
+            "Apache 2.0",
+            "Boost 1.0",
+            "BSD 2-Clause License",
+            "BSD 3-Clause License",
+            "Eclipse Public License 1.0",
+            "The Hippocratic License 2.1",
+            "The Hippocratic License 3.0",
+            "IBM Public License Version 1.0",
+            "ISC License (ISC)",
             "Mozilla Public License 2.0",
-            "The Unlicense",
+            "The Perl License",
         ]
     }
-]);
+])
 
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// .then ((response)) => {
+//     const badgeMarkdown 
 
+// }
 // function to initialize program
 function init() {
 
