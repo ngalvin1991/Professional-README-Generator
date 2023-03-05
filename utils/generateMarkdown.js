@@ -2,7 +2,7 @@
 const license = require("../index");
 
 
-function generateLicenseBadges(license) {
+function generateLicenseBadges(licenses) {
   const badge = {
     "The MIT License":
       "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
@@ -29,24 +29,23 @@ function generateLicenseBadges(license) {
     "The Perl License":
       "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)",
   };
-  return badge[license];
+  return badge[licenses];
 }
 
 function generateMarkdown(response, getBadges) {
   return `# Project Title: ${response.project}
 
-${badgeMarkdown}
+  ${response.getBadges}
+
+  ## Table of Contents: 
+  -[Installation](#installation)
+  -[Useage](#usage)
+  -[Licensing](#license)
+  -[Contact](#contact)
 
 ## Project Description 
 
 ${response.description}
-
-## Table of Contents: 
-[Installation](#installation)
-[Useage](#usage)
-[Licensing](#license)
-[Tests](#testing)
-[Contact](#contact)
 
 ## Installation 
   To install the app run the following: 
@@ -63,7 +62,7 @@ ${response.description}
 
   This application uses the following license: 
 
-  ${response.license}
+  ${response.licenses}
   ${getBadges}
 
 

@@ -56,7 +56,7 @@ inquirer.prompt([
     {
         type: "list",
         message: "What license is required for this project?",
-        name: "license",
+        name: "licenses",
         choices: [
             "The MIT License",
             "Apache 2.0",
@@ -74,10 +74,9 @@ inquirer.prompt([
     }
 ])
 
-
 // function to write README file
 .then ((response) => {
-    const getBadges = generateLicenseBadges(reponse.license);
+    const getBadges = generateLicenseBadges(response.licenses);
     const readMeInput = generateMarkdown(response, getBadges);
     const markdownInput = `${readMeInput}`;
 
