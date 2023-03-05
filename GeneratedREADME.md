@@ -1,4 +1,4 @@
-# Project Title: README Generator
+# Project Title: README Generator 
 
   ## Table of Contents: 
   - [Description](#description)
