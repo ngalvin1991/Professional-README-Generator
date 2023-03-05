@@ -1,16 +1,15 @@
 # Project Title: README Generator 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ## Table of Contents: 
+  - [Installation](#installation)
+  - [Useage](#usage)
+  - [Licensing](#license)
+  - [Contact](#contact)
 
 ## Project Description 
 
 To generate a README file using Node.js in the terminal of your chosen application.
-
-## Table of Contents: 
--[Installation](#installation)
--[Useage](#usage)
--[Licensing](#license)
--[Contact](#contact)
 
 ## Installation 
   To install the app run the following: 
@@ -21,7 +20,7 @@ To generate a README file using Node.js in the terminal of your chosen applicati
 
   Please use the following command to run the application: 
 
-   You can run this application in the terminal using the following command: node index.js
+  You can run this application in the terminal using the following command: node index.js
 
 ## License 
 
@@ -37,6 +36,6 @@ To generate a README file using Node.js in the terminal of your chosen applicati
     noelgalvin1991@gmail.com. 
 
   If you wish to follow me on Github and LinkedIn, please use the links below: 
-  https://github.com/ngalvin1991/,
-  https://www.linkedin.com/in/noel-galvin-58b602262/,
+  - https://github.com/ngalvin1991/,
+  - https://www.linkedin.com/in/noel-galvin-58b602262/
   

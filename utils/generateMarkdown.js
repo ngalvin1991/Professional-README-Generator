@@ -35,13 +35,12 @@ function generateLicenseBadges(licenses) {
 function generateMarkdown(response, getBadges) {
   return `# Project Title: ${response.project}
 
-  ${response.getBadges}
 
   ## Table of Contents: 
-  -[Installation](#installation)
-  -[Useage](#usage)
-  -[Licensing](#license)
-  -[Contact](#contact)
+  - [Installation](#installation)
+  - [Useage](#usage)
+  - [Licensing](#license)
+  - [Contact](#contact)
 
 ## Project Description 
 
@@ -72,8 +71,8 @@ ${response.description}
     ${response.email}. 
 
   If you wish to follow me on Github and LinkedIn, please use the links below: 
-  ${response.github},
-  ${response.linkedin},
+  - ${response.github},
+  - ${response.linkedin}
   `;
 }
 
