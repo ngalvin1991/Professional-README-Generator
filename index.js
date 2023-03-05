@@ -1,7 +1,7 @@
 const fs = require("fs");
-const path = require('path');
+// const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const {generateMarkdown, generateLicenseBadges} = require("./utils/generateMarkdown");
 
 // array of questions for user
 inquirer.prompt([
@@ -76,14 +76,11 @@ inquirer.prompt([
 
 
 // function to write README file
-// .then ((response)) => {
-//     const badgeMarkdown 
+.then ((response) => {
+    const getBadges = generateLicenseBadges(reponse.license);
+    const readMeInput = generateMarkdown(response, getBadges);
+    const markdownInput = `${readMeInput}`;
 
-// }
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+    fs.writeFile("GeneratedREADME.md", markdownInput, (err) =>
+    err ? console.error(err) : console.log("Sucess! You have generated a README file."));
+});

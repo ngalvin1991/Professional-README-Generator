@@ -32,8 +32,8 @@ function generateLicenseBadges(license) {
   return badge[license];
 }
 
-function generateMarkdown(response, badgeMarkdown) {
-return `# Project Title: ${response.project}
+function generateMarkdown(response, getBadges) {
+  return `# Project Title: ${response.project}
 
 ${badgeMarkdown}
 
@@ -64,11 +64,8 @@ ${response.description}
   This application uses the following license: 
 
   ${response.license}
-  ${badgeMarkdown}
+  ${getBadges}
 
-  ## Contributions
-
-  If you wish to contribute to this application, please fork and create a pull request using the appropriate link.
 
   ## Questions 
 
