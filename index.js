@@ -40,6 +40,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        message: "How does the user test the application?",
+        name: "runTest"
+    },
+    {
+        type: "input",
         message: "Please provide your email address:",
         name: "email"
     },

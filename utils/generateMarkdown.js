@@ -35,12 +35,14 @@ function generateLicenseBadges(licenses) {
 function generateMarkdown(response, getBadges) {
   return `# Project Title: ${response.project}
 
-
   ## Table of Contents: 
+  - [Description](#description)
   - [Installation](#installation)
   - [Useage](#usage)
   - [Licensing](#license)
-  - [Contact](#contact)
+  - [Contributing](#Contributing)
+  - [Testing](#runTest)
+  - [Questions](#contact)
 
 ## Project Description 
 
@@ -64,6 +66,13 @@ ${response.description}
   ${response.licenses}
   ${getBadges}
 
+ ## Contributing 
+
+  Should you wish to contribute to this application, please fork and create a pull request. 
+
+ ## Testing
+
+  To test the following application use the following command: ${response.runTest}
 
   ## Questions 
 
