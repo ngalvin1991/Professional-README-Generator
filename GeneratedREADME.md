@@ -1,4 +1,4 @@
-# Project Title: README Generator 
+# Project Title: Professional README Generator 
 
   ## Table of Contents: 
   - [Description](#description)
@@ -11,18 +11,18 @@
 
 ## Project Description 
 
-To generate a README file using Node.js in the terminal of your chosen application.
+Creation of a professional README.md document using the command line and Node.js
 
 ## Installation 
   To install the app run the following: 
 
-  In your terminal you will need to run the following command to install Inquirer: ```npm i inquirer@6.5.0```
+  You will need to install the Inquirer package using the following command: ```npm i inquirer@6.5.0```
 
 ## Usage 
 
   Please use the following command to run the application: 
 
-  You can run this application in the terminal using the following command: ```node index.js```
+  To run the application use the following command: ```node index.js```
 
 ## License 
 
@@ -37,7 +37,7 @@ To generate a README file using Node.js in the terminal of your chosen applicati
 
  ## Testing
 
-  To test the following application use the following command: ```npm test```
+  To test the following application use the following command: To test the application please use the following command: ```npm test```
 
   ## Questions 
 
@@ -45,6 +45,6 @@ To generate a README file using Node.js in the terminal of your chosen applicati
     noelgalvin1991@gmail.com. 
 
   If you wish to follow me on Github and LinkedIn, please use the links below: 
-  - https://github.com/ngalvin1991/,
+  - https://github.com/ngalvin1991,
   - https://www.linkedin.com/in/noel-galvin-58b602262/
   

@@ -17,7 +17,7 @@ The project was to create a command-line application that dynamically generates 
 
 A walkthrough of the applications functionality can be found in the demo in the link below: 
 
-[Application Walkthrough](https://)
+[Application Walkthrough](https://drive.google.com/file/d/1E-7FMaDn4kklz14osvm9pzgxuzMF6Hlw/view)
 
 ## Installation 
   To install the app run the following: 
