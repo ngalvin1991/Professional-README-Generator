@@ -17,12 +17,12 @@ inquirer.prompt([
     },
     {
         type: "input",
-        message: "Does anything need to be installed? (backticks requird for better formatting)",
+        message: "Does anything need to be installed? (backticks required for better formatting)",
         name: "installation",
     },
     {
         type: "input",
-        message: "How is the app used? (backticks requird for better formatting)",
+        message: "How is the app used? (backticks required for better formatting)",
         name: "usage",
     },
     {
@@ -40,7 +40,7 @@ inquirer.prompt([
     },
     {
         type: "input",
-        message: "How does the user test the application? (backticks requird for better formatting)",
+        message: "How does the user test the application? (backticks required for better formatting)",
         name: "runTest"
     },
     {
